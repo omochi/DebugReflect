@@ -8,6 +8,8 @@ It supports classes and reference cycle.
 Type implementation.
 
 ```swift
+import DebugReflectableFramework
+
 class Cat : DebugReflectable {
     init(name: String) {
         self.name = name
