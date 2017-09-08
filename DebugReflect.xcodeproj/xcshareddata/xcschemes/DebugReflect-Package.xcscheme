@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DebugReflectable::DebugReflect"
+               BlueprintIdentifier = "DebugReflect::DebugReflect"
                BuildableName = "DebugReflect.framework"
                BlueprintName = "DebugReflect"
-               ReferencedContainer = "container:DebugReflectable.xcodeproj">
+               ReferencedContainer = "container:DebugReflect.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,10 +33,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DebugReflectable::DebugReflectableTests"
+               BlueprintIdentifier = "DebugReflect::DebugReflectableTests"
                BuildableName = "DebugReflectableTests.xctest"
                BlueprintName = "DebugReflectableTests"
-               ReferencedContainer = "container:DebugReflectable.xcodeproj">
+               ReferencedContainer = "container:DebugReflect.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,10 +57,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DebugReflectable::DebugReflect"
+            BlueprintIdentifier = "DebugReflect::DebugReflect"
             BuildableName = "DebugReflect.framework"
             BlueprintName = "DebugReflect"
-            ReferencedContainer = "container:DebugReflectable.xcodeproj">
+            ReferencedContainer = "container:DebugReflect.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
