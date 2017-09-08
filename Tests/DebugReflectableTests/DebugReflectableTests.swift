@@ -1,5 +1,5 @@
 import XCTest
-@testable import DebugReflectable
+@testable import DebugReflectableFramework
 
 import Foundation
 
