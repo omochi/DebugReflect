@@ -74,7 +74,6 @@ Cat@0x(\\w+) \\{
         let regex = try! NSRegularExpression(pattern: pattern, options: [])
         
         let text = cat0.debugDescription as NSString
-        print(text)
         
         let matchOpt = regex.firstMatch(in: text as String, options: [],
                                      range: NSRange(location: 0, length: text.length))
