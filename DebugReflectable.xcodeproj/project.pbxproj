@@ -23,7 +23,7 @@
 /* Begin PBXBuildFile section */
 		OBJ_27 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_33 /* DebugReflectableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* DebugReflectableTests.swift */; };
-		OBJ_35 /* DebugReflectableFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "DebugReflectable::DebugReflectableFramework::Product" /* DebugReflectableFramework.framework */; };
+		OBJ_35 /* DebugReflect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "DebugReflectable::DebugReflect::Product" /* DebugReflect.framework */; };
 		OBJ_42 /* AnyDebugReflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AnyDebugReflectable.swift */; };
 		OBJ_43 /* DebugReflectBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DebugReflectBuilder.swift */; };
 		OBJ_44 /* DebugReflectValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DebugReflectValue.swift */; };
@@ -34,14 +34,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D67B6E7F1F626C7C007F0A8D /* PBXContainerItemProxy */ = {
+		D626A5661F626D60002D578F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "DebugReflectable::DebugReflectableFramework";
-			remoteInfo = DebugReflectableFramework;
+			remoteGlobalIDString = "DebugReflectable::DebugReflect";
+			remoteInfo = DebugReflect;
 		};
-		D67B6E801F626C7C007F0A8D /* PBXContainerItemProxy */ = {
+		D626A5671F626D60002D578F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -51,7 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		"DebugReflectable::DebugReflectableFramework::Product" /* DebugReflectableFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DebugReflectableFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"DebugReflectable::DebugReflect::Product" /* DebugReflect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DebugReflect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DebugReflectable::DebugReflectableTests::Product" /* DebugReflectableTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DebugReflectableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* DebugReflectBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugReflectBuilder.swift; sourceTree = "<group>"; };
 		OBJ_11 /* DebugReflectValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugReflectValue.swift; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_35 /* DebugReflectableFramework.framework in Frameworks */,
+				OBJ_35 /* DebugReflect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				"DebugReflectable::DebugReflectableTests::Product" /* DebugReflectableTests.xctest */,
-				"DebugReflectable::DebugReflectableFramework::Product" /* DebugReflectableFramework.framework */,
+				"DebugReflectable::DebugReflect::Product" /* DebugReflect.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -123,12 +123,12 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* DebugReflectableFramework */,
+				OBJ_8 /* DebugReflect */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_8 /* DebugReflectableFramework */ = {
+		OBJ_8 /* DebugReflect */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* AnyDebugReflectable.swift */,
@@ -139,16 +139,16 @@
 				OBJ_14 /* SwiftTypes.swift */,
 				OBJ_15 /* Util.swift */,
 			);
-			name = DebugReflectableFramework;
-			path = Sources/DebugReflectableFramework;
+			name = DebugReflect;
+			path = Sources/DebugReflect;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		"DebugReflectable::DebugReflectableFramework" /* DebugReflectableFramework */ = {
+		"DebugReflectable::DebugReflect" /* DebugReflect */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_38 /* Build configuration list for PBXNativeTarget "DebugReflectableFramework" */;
+			buildConfigurationList = OBJ_38 /* Build configuration list for PBXNativeTarget "DebugReflect" */;
 			buildPhases = (
 				OBJ_41 /* Sources */,
 				OBJ_49 /* Frameworks */,
@@ -157,9 +157,9 @@
 			);
 			dependencies = (
 			);
-			name = DebugReflectableFramework;
-			productName = DebugReflectableFramework;
-			productReference = "DebugReflectable::DebugReflectableFramework::Product" /* DebugReflectableFramework.framework */;
+			name = DebugReflect;
+			productName = DebugReflect;
+			productReference = "DebugReflectable::DebugReflect::Product" /* DebugReflect.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		"DebugReflectable::DebugReflectableTests" /* DebugReflectableTests */ = {
@@ -215,7 +215,7 @@
 			targets = (
 				"DebugReflectable::SwiftPMPackageDescription" /* DebugReflectablePackageDescription */,
 				"DebugReflectable::DebugReflectableTests" /* DebugReflectableTests */,
-				"DebugReflectable::DebugReflectableFramework" /* DebugReflectableFramework */,
+				"DebugReflectable::DebugReflect" /* DebugReflect */,
 				"DebugReflectable::DebugReflectablePackageTests::ProductTarget" /* DebugReflectablePackageTests */,
 			);
 		};
@@ -257,13 +257,13 @@
 /* Begin PBXTargetDependency section */
 		OBJ_36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "DebugReflectable::DebugReflectableFramework" /* DebugReflectableFramework */;
-			targetProxy = D67B6E7F1F626C7C007F0A8D /* PBXContainerItemProxy */;
+			target = "DebugReflectable::DebugReflect" /* DebugReflect */;
+			targetProxy = D626A5661F626D60002D578F /* PBXContainerItemProxy */;
 		};
 		OBJ_54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "DebugReflectable::DebugReflectableTests" /* DebugReflectableTests */;
-			targetProxy = D67B6E801F626C7C007F0A8D /* PBXContainerItemProxy */;
+			targetProxy = D626A5671F626D60002D578F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -353,16 +353,16 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = DebugReflectable.xcodeproj/DebugReflectableFramework_Info.plist;
+				INFOPLIST_FILE = DebugReflectable.xcodeproj/DebugReflect_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = DebugReflectableFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = DebugReflect;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = DebugReflectableFramework;
+				TARGET_NAME = DebugReflect;
 			};
 			name = Debug;
 		};
@@ -395,16 +395,16 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = DebugReflectable.xcodeproj/DebugReflectableFramework_Info.plist;
+				INFOPLIST_FILE = DebugReflectable.xcodeproj/DebugReflect_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = DebugReflectableFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = DebugReflect;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = DebugReflectableFramework;
+				TARGET_NAME = DebugReflect;
 			};
 			name = Release;
 		};
@@ -450,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_38 /* Build configuration list for PBXNativeTarget "DebugReflectableFramework" */ = {
+		OBJ_38 /* Build configuration list for PBXNativeTarget "DebugReflect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_39 /* Debug */,

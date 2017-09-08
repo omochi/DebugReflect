@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DebugReflectable::DebugReflectableFramework"
-               BuildableName = "DebugReflectableFramework.framework"
-               BlueprintName = "DebugReflectableFramework"
+               BlueprintIdentifier = "DebugReflectable::DebugReflect"
+               BuildableName = "DebugReflect.framework"
+               BlueprintName = "DebugReflect"
                ReferencedContainer = "container:DebugReflectable.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,9 +57,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DebugReflectable::DebugReflectableFramework"
-            BuildableName = "DebugReflectableFramework.framework"
-            BlueprintName = "DebugReflectableFramework"
+            BlueprintIdentifier = "DebugReflectable::DebugReflect"
+            BuildableName = "DebugReflect.framework"
+            BlueprintName = "DebugReflect"
             ReferencedContainer = "container:DebugReflectable.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
