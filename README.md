@@ -1,6 +1,6 @@
 # DebugReflectable
 
-This library supports dump your data structure.
+This library help dump your data structure in Swift.
 It supports classes and reference cycle.
 
 # Example
