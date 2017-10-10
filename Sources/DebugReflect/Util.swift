@@ -7,22 +7,22 @@
 
 import Foundation
 
-internal func addr(of x: AnyObject) -> Int {
+public func address(of x: AnyObject) -> Int {
     return Int(bitPattern: Unmanaged.passUnretained(x).toOpaque())
 }
 
-internal func summary(of x: Any) -> String {
+public func debugSummary(of x: Any) -> String {
     let typeStr = String(describing: type(of: x))
     let addrStr: String
     if let obj = castIfClass(x) {
-        addrStr = String(format: "@0x%x", addr(of: obj))
+        addrStr = String(format: "@0x%x", address(of: obj))
     } else {
         addrStr = ""
     }
     return "\(typeStr)\(addrStr)"
 }
 
-internal func castIfClass(_ x: Any) -> AnyObject? {
+public func castIfClass(_ x: Any) -> AnyObject? {
     guard type(of: x) is AnyObject.Type else {
         return nil
     }

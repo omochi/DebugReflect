@@ -14,7 +14,7 @@ public class DebugReflectWriter {
         if let obj = castIfClass(x) {
             if visited.contains(obj) {
                 if isPrintingSummary(x) {
-                    writer.write(summary(of: x) + " ")
+                    writer.write(debugSummary(of: x) + " ")
                 }
                 writer.write(" { recursive }")
                 return
@@ -25,7 +25,7 @@ public class DebugReflectWriter {
         switch x.debugReflect() {
         case let .string(t):
             if isPrintingSummary(x) {
-                writer.write(summary(of: x) + "(")
+                writer.write(debugSummary(of: x) + "(")
             }
             writer.write(t)
             if isPrintingSummary(x) {
@@ -33,12 +33,12 @@ public class DebugReflectWriter {
             }
         case let .array(xs):
             if isPrintingSummary(x) {
-                writer.write(summary(of: x) + " ")
+                writer.write(debugSummary(of: x) + " ")
             }
             write(array: xs)
         case let .dictionary(xs):
             if isPrintingSummary(x) {
-                writer.write(summary(of: x) + " ")
+                writer.write(debugSummary(of: x) + " ")
             }
             write(dictionary: xs)
         }
@@ -103,12 +103,12 @@ public class DebugReflectWriter {
         var addrs = Set<Int>()
         
         func contains(_ x: AnyObject) -> Bool {
-            return addrs.contains(addr(of: x))
+            return addrs.contains(address(of: x))
         }
         
         mutating func add(_ x: AnyObject) {
             objects.append(x)
-            addrs.insert(addr(of: x))
+            addrs.insert(address(of: x))
         }
     }
     
