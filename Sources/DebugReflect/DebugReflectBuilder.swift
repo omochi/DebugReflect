@@ -11,13 +11,13 @@ public class DebugReflectBuilder {
     public init() {
     }
     
-    public var fields: Array<(String, DebugReflectable)> = []
+    public var fields: Array<(String, Any)> = []
     
-    public func field(_ name: String, _ field: DebugReflectable) {
+    public func field(_ name: String, _ field: Any) {
         fields.append((name, field))
     }
     
-    public func fieldIfPresent<X: DebugReflectable>(_ name: String, _ field: X?) {
+    public func fieldIfPresent(_ name: String, _ field: Any?) {
         if let field = field {
             self.field(name, field)
         }

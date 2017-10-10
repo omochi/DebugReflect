@@ -6,13 +6,13 @@
 //
 
 public struct AnyDebugReflectable : DebugReflectable {
-    public init(_ debugReflect: @escaping () -> DebugReflectValue) {
-        self._debugReflect = debugReflect
+    public init<X: DebugReflectable>(_ base: X) {
+        self.base = base
     }
     
     public func debugReflect() -> DebugReflectValue {
-        return _debugReflect()
+        return base.debugReflect()
     }
     
-    private var _debugReflect: () -> DebugReflectValue
+    private var base: DebugReflectable
 }

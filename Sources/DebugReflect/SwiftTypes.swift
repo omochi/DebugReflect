@@ -52,7 +52,7 @@ extension String : DebugReflectable {
 
 extension Array : DebugReflectable {
     public func debugReflect() -> DebugReflectValue {
-        return .array(map (convertToDebugReflectable))
+        return .array(self)
     }
     public static var debugTypePrinting: Bool {
         return false
@@ -61,9 +61,9 @@ extension Array : DebugReflectable {
 
 extension Dictionary : DebugReflectable {
     public func debugReflect() -> DebugReflectValue {
-        return .dictionary(map { (kv: (Any, Any)) -> (String, DebugReflectable) in
+        return .dictionary(map { (kv: (Any, Any)) -> (String, Any) in
             let (k, v) = kv
-            return (String(describing: k), convertToDebugReflectable(v))
+            return (String(describing: k), v)
         })
     }
     public static var debugTypePrinting: Bool {

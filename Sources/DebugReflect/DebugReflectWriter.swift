@@ -8,19 +8,16 @@
 import Foundation
 
 public class DebugReflectWriter {
-    public init() {
-        lines = [""]
-        indent = 0
-    }
-
+    public init() {}
+    
     public func write(_ x: DebugReflectable) {
         if type(of: x).debugTypePrinting {
-            write(string: summary(of: x) + " ")
+            writer.write(summary(of: x) + " ")
         }
         
         if let obj = castIfClass(x) {
             if visited.contains(obj) {
-                write(string: "{ recursive }")
+                writer.write("{ recursive }")
                 return
             }
             visited.add(obj)
@@ -28,7 +25,7 @@ public class DebugReflectWriter {
         
         switch x.debugReflect() {
         case let .string(x):
-            write(string: x)
+            writer.write(x)
         case let .array(xs):
             write(array: xs)
         case let .dictionary(xs):
@@ -37,73 +34,55 @@ public class DebugReflectWriter {
     }
     
     public func output() -> String {
-        return lines.joined(separator: "\n")
+        return writer.output()
     }
     
-    private func write(string: String) {
-        let n = lines.count
-        var line = lines[n-1]
-        
-        if line.count == 0 {
-            line += String.init(repeating: "  ", count: indent)
+    private func write(any: Any) {
+        guard let dr = any as? DebugReflectable else {
+            writer.write(String(describing: any))
+            return
         }
-        
-        line += string
-        lines[n-1] = line
+        write(dr)
     }
     
-    private func writeNewline() {
-        lines.append("")
-    }
-    
-    private func write(array: Array<DebugReflectable>) {
+    private func write(array: Array<Any>) {
         if array.count == 0 {
-            write(string: "[]")
+            writer.write("[]")
         } else {
-            write(string: "[")
-            writeNewline()
+            writer.write("[")
+            writer.writeNewline()
             
-            pushIndent()
+            writer.pushIndent()
             for x in array {
-                write(x)
-                writeNewline()
+                write(any: x)
+                writer.writeNewline()
             }
-            popIndent()
+            writer.popIndent()
             
-            write(string: "]")
+            writer.write("]")
         }
     }
     
-    private func write(dictionary: Array<(String, DebugReflectable)>) {
+    private func write(dictionary: Array<(String, Any)>) {
         if dictionary.count == 0 {
-            write(string: "{}")
+            writer.write("{}")
         } else {
-            write(string: "{")
-            writeNewline()
+            writer.write("{")
+            writer.writeNewline()
             
-            pushIndent()
+            writer.pushIndent()
             for (k, v) in dictionary {
-                write(string: k)
-                write(string: " => ")
-                write(v)
-                writeNewline()
+                writer.write(k)
+                writer.write(" => ")
+                write(any: v)
+                writer.writeNewline()
             }
-            popIndent()
+            writer.popIndent()
             
-            write(string: "}")
+            writer.write("}")
         }
-    }
-    
-    private func pushIndent() {
-        indent += 1
-    }
-    private func popIndent() {
-        indent -= 1
     }
 
-    private var lines: [String]
-    private var indent: Int
-    
     private struct VisitedObjects {
         var objects = Array<AnyObject>()
         var addrs = Set<Int>()
@@ -119,5 +98,7 @@ public class DebugReflectWriter {
     }
     
     private var visited = VisitedObjects()
+    
+    private var writer = IndentTextWriter()
 
 }

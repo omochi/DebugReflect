@@ -7,12 +7,12 @@
 
 public enum DebugReflectValue {
     case string(String)
-    case array(Array<DebugReflectable>)
-    case dictionary(Array<(String, DebugReflectable)>)
+    case array(Array<Any>)
+    case dictionary(Array<(String, Any)>)
     
-    public static func build(_ f: (DebugReflectBuilder) throws -> Void) rethrows -> DebugReflectValue {
+    public static func build(_ f: (DebugReflectBuilder) -> Void) -> DebugReflectValue {
         let builder = DebugReflectBuilder()
-        try f(builder)
+        f(builder)
         return builder.build()
     }
 }

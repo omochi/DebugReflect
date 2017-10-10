@@ -29,11 +29,3 @@ internal func castIfClass(_ x: Any) -> AnyObject? {
     return x as AnyObject
 }
 
-internal func convertToDebugReflectable(_ x: Any) -> DebugReflectable {
-    if let refl = x as? DebugReflectable {
-        return refl
-    }
-    return AnyDebugReflectable {
-        .string(String(describing: x))
-    }
-}

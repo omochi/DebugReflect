@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		D60465E01F8C7E40002571DE /* IndentTextWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60465DF1F8C7E40002571DE /* IndentTextWriter.swift */; };
 		OBJ_27 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_33 /* DebugReflectableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* DebugReflectableTests.swift */; };
 		OBJ_35 /* DebugReflect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "DebugReflect::DebugReflect::Product" /* DebugReflect.framework */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D60465DF1F8C7E40002571DE /* IndentTextWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentTextWriter.swift; sourceTree = "<group>"; };
 		"DebugReflect::DebugReflect::Product" /* DebugReflect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DebugReflect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DebugReflect::DebugReflectableTests::Product" /* DebugReflectableTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DebugReflectableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* DebugReflectBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugReflectBuilder.swift; sourceTree = "<group>"; };
@@ -109,7 +111,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -117,7 +119,6 @@
 				OBJ_16 /* Tests */,
 				OBJ_19 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -134,8 +135,9 @@
 				OBJ_9 /* AnyDebugReflectable.swift */,
 				OBJ_10 /* DebugReflectBuilder.swift */,
 				OBJ_11 /* DebugReflectValue.swift */,
-				OBJ_12 /* DebugReflectWriter.swift */,
 				OBJ_13 /* DebugReflectable.swift */,
+				OBJ_12 /* DebugReflectWriter.swift */,
+				D60465DF1F8C7E40002571DE /* IndentTextWriter.swift */,
 				OBJ_14 /* SwiftTypes.swift */,
 				OBJ_15 /* Util.swift */,
 			);
@@ -208,7 +210,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_19 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -247,6 +249,7 @@
 				OBJ_44 /* DebugReflectValue.swift in Sources */,
 				OBJ_45 /* DebugReflectWriter.swift in Sources */,
 				OBJ_46 /* DebugReflectable.swift in Sources */,
+				D60465E01F8C7E40002571DE /* IndentTextWriter.swift in Sources */,
 				OBJ_47 /* SwiftTypes.swift in Sources */,
 				OBJ_48 /* Util.swift in Sources */,
 			);
