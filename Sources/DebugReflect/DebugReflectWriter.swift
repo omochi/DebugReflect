@@ -11,30 +11,45 @@ public class DebugReflectWriter {
     public init() {}
     
     public func write(_ x: DebugReflectable) {
-        if type(of: x).debugTypePrinting {
-            writer.write(summary(of: x) + " ")
-        }
-        
         if let obj = castIfClass(x) {
             if visited.contains(obj) {
-                writer.write("{ recursive }")
+                if isPrintingSummary(x) {
+                    writer.write(summary(of: x) + " ")
+                }
+                writer.write(" { recursive }")
                 return
             }
             visited.add(obj)
         }
         
         switch x.debugReflect() {
-        case let .string(x):
-            writer.write(x)
+        case let .string(t):
+            if isPrintingSummary(x) {
+                writer.write(summary(of: x) + "(")
+            }
+            writer.write(t)
+            if isPrintingSummary(x) {
+                writer.write(")")
+            }
         case let .array(xs):
+            if isPrintingSummary(x) {
+                writer.write(summary(of: x) + " ")
+            }
             write(array: xs)
         case let .dictionary(xs):
+            if isPrintingSummary(x) {
+                writer.write(summary(of: x) + " ")
+            }
             write(dictionary: xs)
         }
     }
     
     public func output() -> String {
         return writer.output()
+    }
+    
+    private func isPrintingSummary(_ x: DebugReflectable) -> Bool {
+        return type(of: x).debugTypePrinting
     }
     
     private func write(any: Any) {

@@ -5,6 +5,15 @@
 //  Created by omochimetaru on 2017/09/08.
 //
 
+extension Bool : DebugReflectable {
+    public func debugReflect() -> DebugReflectValue {
+        return .string(String(self))
+    }
+    public static var debugTypePrinting: Bool {
+        return false
+    }
+}
+
 extension Int : DebugReflectable {
     public func debugReflect() -> DebugReflectValue {
         return .string(String(self))
