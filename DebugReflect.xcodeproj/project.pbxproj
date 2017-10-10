@@ -21,27 +21,27 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		D60465E01F8C7E40002571DE /* IndentTextWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60465DF1F8C7E40002571DE /* IndentTextWriter.swift */; };
 		OBJ_27 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_33 /* DebugReflectableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* DebugReflectableTests.swift */; };
 		OBJ_35 /* DebugReflect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "DebugReflect::DebugReflect::Product" /* DebugReflect.framework */; };
-		OBJ_43 /* DebugReflectBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DebugReflectBuilder.swift */; };
-		OBJ_44 /* DebugReflectValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DebugReflectValue.swift */; };
-		OBJ_45 /* DebugReflectWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DebugReflectWriter.swift */; };
-		OBJ_46 /* DebugReflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DebugReflectable.swift */; };
+		OBJ_42 /* DebugReflectBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DebugReflectBuilder.swift */; };
+		OBJ_43 /* DebugReflectValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DebugReflectValue.swift */; };
+		OBJ_44 /* DebugReflectWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DebugReflectWriter.swift */; };
+		OBJ_45 /* DebugReflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DebugReflectable.swift */; };
+		OBJ_46 /* IndentTextWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* IndentTextWriter.swift */; };
 		OBJ_47 /* SwiftTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* SwiftTypes.swift */; };
 		OBJ_48 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D626A5681F62785B002D578F /* PBXContainerItemProxy */ = {
+		D60465ED1F8C9D9B002571DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "DebugReflect::DebugReflect";
 			remoteInfo = DebugReflect;
 		};
-		D626A5691F62785B002D578F /* PBXContainerItemProxy */ = {
+		D60465EE1F8C9D9B002571DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -51,17 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D60465DF1F8C7E40002571DE /* IndentTextWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentTextWriter.swift; sourceTree = "<group>"; };
 		"DebugReflect::DebugReflect::Product" /* DebugReflect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DebugReflect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DebugReflect::DebugReflectableTests::Product" /* DebugReflectableTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DebugReflectableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* DebugReflectBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugReflectBuilder.swift; sourceTree = "<group>"; };
-		OBJ_11 /* DebugReflectValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugReflectValue.swift; sourceTree = "<group>"; };
-		OBJ_12 /* DebugReflectWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugReflectWriter.swift; sourceTree = "<group>"; };
-		OBJ_13 /* DebugReflectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugReflectable.swift; sourceTree = "<group>"; };
+		OBJ_10 /* DebugReflectValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugReflectValue.swift; sourceTree = "<group>"; };
+		OBJ_11 /* DebugReflectWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugReflectWriter.swift; sourceTree = "<group>"; };
+		OBJ_12 /* DebugReflectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugReflectable.swift; sourceTree = "<group>"; };
+		OBJ_13 /* IndentTextWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentTextWriter.swift; sourceTree = "<group>"; };
 		OBJ_14 /* SwiftTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTypes.swift; sourceTree = "<group>"; };
 		OBJ_15 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		OBJ_18 /* DebugReflectableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugReflectableTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* DebugReflectBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugReflectBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 = {
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -117,6 +117,7 @@
 				OBJ_16 /* Tests */,
 				OBJ_19 /* Products */,
 			);
+			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -130,11 +131,11 @@
 		OBJ_8 /* DebugReflect */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_10 /* DebugReflectBuilder.swift */,
-				OBJ_11 /* DebugReflectValue.swift */,
-				OBJ_13 /* DebugReflectable.swift */,
-				OBJ_12 /* DebugReflectWriter.swift */,
-				D60465DF1F8C7E40002571DE /* IndentTextWriter.swift */,
+				OBJ_9 /* DebugReflectBuilder.swift */,
+				OBJ_10 /* DebugReflectValue.swift */,
+				OBJ_11 /* DebugReflectWriter.swift */,
+				OBJ_12 /* DebugReflectable.swift */,
+				OBJ_13 /* IndentTextWriter.swift */,
 				OBJ_14 /* SwiftTypes.swift */,
 				OBJ_15 /* Util.swift */,
 			);
@@ -207,7 +208,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5;
+			mainGroup = OBJ_5 /*  */;
 			productRefGroup = OBJ_19 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,11 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_43 /* DebugReflectBuilder.swift in Sources */,
-				OBJ_44 /* DebugReflectValue.swift in Sources */,
-				OBJ_45 /* DebugReflectWriter.swift in Sources */,
-				OBJ_46 /* DebugReflectable.swift in Sources */,
-				D60465E01F8C7E40002571DE /* IndentTextWriter.swift in Sources */,
+				OBJ_42 /* DebugReflectBuilder.swift in Sources */,
+				OBJ_43 /* DebugReflectValue.swift in Sources */,
+				OBJ_44 /* DebugReflectWriter.swift in Sources */,
+				OBJ_45 /* DebugReflectable.swift in Sources */,
+				OBJ_46 /* IndentTextWriter.swift in Sources */,
 				OBJ_47 /* SwiftTypes.swift in Sources */,
 				OBJ_48 /* Util.swift in Sources */,
 			);
@@ -257,12 +258,12 @@
 		OBJ_36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "DebugReflect::DebugReflect" /* DebugReflect */;
-			targetProxy = D626A5681F62785B002D578F /* PBXContainerItemProxy */;
+			targetProxy = D60465ED1F8C9D9B002571DE /* PBXContainerItemProxy */;
 		};
 		OBJ_54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "DebugReflect::DebugReflectableTests" /* DebugReflectableTests */;
-			targetProxy = D626A5691F62785B002D578F /* PBXContainerItemProxy */;
+			targetProxy = D60465EE1F8C9D9B002571DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -271,7 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -280,7 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -353,7 +354,6 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DebugReflect.xcodeproj/DebugReflect_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -396,7 +396,6 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DebugReflect.xcodeproj/DebugReflect_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
