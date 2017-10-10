@@ -25,7 +25,6 @@
 		OBJ_27 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_33 /* DebugReflectableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* DebugReflectableTests.swift */; };
 		OBJ_35 /* DebugReflect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "DebugReflect::DebugReflect::Product" /* DebugReflect.framework */; };
-		OBJ_42 /* AnyDebugReflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AnyDebugReflectable.swift */; };
 		OBJ_43 /* DebugReflectBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DebugReflectBuilder.swift */; };
 		OBJ_44 /* DebugReflectValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DebugReflectValue.swift */; };
 		OBJ_45 /* DebugReflectWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DebugReflectWriter.swift */; };
@@ -63,7 +62,6 @@
 		OBJ_15 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		OBJ_18 /* DebugReflectableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugReflectableTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* AnyDebugReflectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDebugReflectable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +130,6 @@
 		OBJ_8 /* DebugReflect */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* AnyDebugReflectable.swift */,
 				OBJ_10 /* DebugReflectBuilder.swift */,
 				OBJ_11 /* DebugReflectValue.swift */,
 				OBJ_13 /* DebugReflectable.swift */,
@@ -244,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_42 /* AnyDebugReflectable.swift in Sources */,
 				OBJ_43 /* DebugReflectBuilder.swift in Sources */,
 				OBJ_44 /* DebugReflectValue.swift in Sources */,
 				OBJ_45 /* DebugReflectWriter.swift in Sources */,
